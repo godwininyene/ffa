@@ -1,0 +1,699 @@
+/*------------- Global Reset -----------*/ 
+ *,
+*::before,
+*::after{
+    padding:0;
+    margin:0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;/* THIS REPRESENT 10PX 10/16*100=10*/
+}
+body{
+    font-family: lato, sans-serif;
+    line-height: 1.8;
+    position: relative;
+}
+:root{
+	/* Theme Colors */
+	--main-color: #0099ff;
+    --light-grey-1: #f7f7f7;
+    --light-grey-2:#f4f4f4;
+}
+
+/*////////////*********************** Global Reset  ///////////////////////*/
+ul{list-style: none; }
+a{ text-decoration: none; }
+section{ padding:  10rem 0; }
+
+
+
+/*////////////***********************   Headings  ///////////////////////*/
+h1, h2, h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: normal;
+}
+
+h2{
+    font-size: 3rem;
+    word-spacing: 2px;
+    text-align: center;
+    margin-top: 3rem;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    content: " ";
+    display: block;
+    height: 2px;
+    background-color: var(--main-color);
+    width: 10rem;
+    margin: 0px auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/*////////////***********************   Owl-carousel Reset  ///////////////////////*/
+
+.ow-carousel{
+    display: flex !important;
+    justify-content: center !important;
+}
+.owl-carousel .owl-stage{ 
+    display: flex !important; 
+    justify-content: center !important;
+}
+
+
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: var(--main-color);
+    background-color: #fff;
+    box-shadow: 0 2px 6px #efefef;
+    font-size: 2rem;
+    margin-right: 1rem;
+    transition: all .2s;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #fff;
+    color: initial;
+    text-decoration: none;
+}
+
+
+
+
+/*////////////***********************   Buttons  ///////////////////////*/
+.btn-group{
+    text-align: center;
+    margin-top: 2rem;
+}
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-weight: 300;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.btn-full{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: #fff;
+    margin-right: 1.5rem;
+}
+.btn-full:hover{
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.btn-half{
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.btn-half:hover{
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+
+/*////////////*********************** Row, container and columns  ///////////////////////*/
+.row{
+    max-width: 114rem;
+    margin: auto;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-1-of-2{ flex: 0 0 48%; }
+.col-1-of-3{ flex: 0 0 31%; }
+
+.col-1-of-4 { 
+    flex: 0 0 24%;  
+    margin-bottom: 1.5rem;
+}
+
+/*////////////*********************** Utility Classess ///////////////////////*/
+.u-center-text{ text-align: center;}
+.u-margin-bottom-big{ margin-bottom: 8rem; }
+.u-margin-bottom-md{ margin-bottom: 4rem ;}
+.u-color-text-white{ color: #fff;}
+.flex-row{ display: flex; }
+.main-text{
+	width: 70%;
+    margin-left: 15%;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 140%;
+}
+.paragraph {
+    font-size: 1.6rem;
+    line-height: 140%;
+}
+
+
+/*////////////*********************** Navigation ///////////////////////*/
+.nav{
+	padding: 0 2rem;
+	height: 0rem;
+	min-height: 5.8rem;
+	overflow: hidden;
+	transition: height 1s ease-in-out;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px #707070;
+}
+
+.nav .nav__brand{ 
+    align-items: center; 
+    padding-top: .5rem;
+}
+ 
+.nav .nav__brand .nav__logo{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+.nav .nav__brand span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav__motor{
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.nav__menu{ justify-content: space-between; }
+
+.nav .toggle-collapse{
+	position: absolute;
+	top: 0;
+    right: 3rem;
+	cursor: pointer;
+	display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+	display: flex;
+	justify-content: flex-end;
+	padding: 1.7rem 0;
+}
+.collapse{ height: 40rem;}
+.nav .toggle-collapse i{
+	font-size: 2.5rem;
+	color: var(--text-gray);
+}
+
+.nav .nav__menu li a{
+    color:#333;
+    font-size: 1.6rem;
+    display: inline-block;
+    padding:1rem 2rem;
+    transition: all .3s;
+}
+
+.nav .nav__menu-item li a:hover{
+    background-color:  var(--main-color);
+    color: #fff;
+}
+.nav .nav__menu-item .active{
+   border-bottom: 1px solid var(--main-color);
+}
+
+
+
+/*////////////*********************** Site Title ///////////////////////*/
+.site-title{
+    height: 85vh;
+    margin-top: 1rem;
+    background-size: cover;
+    position: relative;
+}
+.site-title__overlay{
+    position: absolute; 
+    top: 0;
+    height: 100%; 
+    width: 100%; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5));
+}
+.bg-video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.bg__video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.site-title__text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.site-title__text-box span{
+    color: #fff;
+    font-family: arial;
+    display: block;
+}
+
+.site-title--main{
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 140%;
+    animation-name:fadeIn;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+}
+.site-title--sub-1{
+    font-size: 2rem;
+    font-weight: 100;
+    background-color:  var(--main-color);
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 3.5s;
+    animation-fill-mode:backwards;
+}
+.site-title--sub-2{
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+    font-family: helvetica;
+    animation-name: driveIn;
+    animation-duration: 5s;
+    position: relative;
+    animation-delay: 4.5s;
+    animation-fill-mode: backwards;
+}
+
+/*////////////*********************** Animations ///////////////////////*/
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+@keyframes driveIn{
+    0%{
+        left: -100rem;
+    }
+    100%{
+        left:0;
+    }
+}
+
+
+/*////////////*********************** Section About Us ///////////////////////*/
+.section-about{
+    position: relative;
+    background-color: var(--light-grey-2);
+}
+
+.church-photo{ width: 100%; }
+
+
+
+/*////////////*********************** Section Church Activities ///////////////////////*/
+.services-box{ text-align: center; }
+.services-box h3{ 
+    border-bottom: 1px solid #000; 
+}
+
+.services-box span{ font-size: 2rem;}
+
+/*////////////*********************** Section Lead Pastor ///////////////////////*/
+.section-lead-pastor{
+    background-color: var(--main-color);
+}
+ .lead-pastor{
+    background-color: #fff;
+    width: 100%;
+    padding: 2rem 0;
+    margin: auto;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 30%);
+
+}
+
+.lead-pastor-figure{
+    text-align: center;
+    margin-top: -6rem;
+}
+
+.lead-pastor__img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+
+.lead-pastor__name{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--light-blue);
+}
+
+
+
+.lead-pastor__bio{ 
+    width: 70%;
+    margin: auto;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 140%;
+}
+.leader__info-box > .leader__figure-box{
+    text-align: center;
+    margin-top: -6rem;
+}
+
+.leader__figure-box .leader__img{
+    height: 20rem;
+    width: 20rem !important;
+    display: inline-block !important;
+    border-radius: 20rem;
+}
+.leader__name{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--light-blue);
+}
+.leader__info-box p{
+    font-size: 1.8rem;
+}
+
+
+/* -----------------------------------Section Our Team--------- */
+.team-member-card{
+    border: 1px solid var(--main-color);
+    border-radius: .2rem;
+    text-align: center;
+    height: 100%;
+    margin: 0 2rem;
+}
+
+.team-member-card p{
+    font-size: 1.6rem;
+    font-family: lato, san-serif;
+    line-height: 140%;
+}
+
+/* -----------------------------------Section Our beliefs--------- */
+.section-our-beliefs{
+    background-color: var(--light-grey-1);
+}
+
+/* -----------------------------------Section Testimonies--------- */
+.section-testimonies{
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.review{
+    position: relative;
+    background-color: #fff;
+    padding: 3rem;
+    font-family: lato, san-serif;
+}
+.review::before{
+    content: "\201C";
+    position: absolute;
+     top: -10.75rem;
+    left: -1rem;
+    font-size: 20rem;
+    color: #777;
+    font-family: sans-serif;
+    z-index: 1;
+}
+.review__text{
+    font-family: lato, sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 10;
+}
+.review__figure{
+    display: flex;
+    align-items: center;
+}
+.review__img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+.review__name{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: auto;
+}
+
+/* -----------------------------------Section Event--------- */
+.section-event{
+    position: relative;
+    background-color: var(--light-grey-2);
+}
+
+.event{
+    margin: 0 2rem;
+    box-shadow: 0 .5rem .2rem rgba(0, 0, 0, 0.2);
+}
+
+.event__figure{
+    margin: auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    height: 100%;
+}
+.event__flyer{ 
+    width: 30rem; 
+    height: 30rem;
+    object-fit: scale-down;
+}
+
+.event__caption{
+    background-color: #eee;
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 130%;
+    padding: 1rem 0;
+}
+
+
+/* -----------------------------------Section Church Gallery--------- */
+.gallery{
+    height: 100%;
+}
+.gallery__figure{
+    height: 100%;
+}
+
+.gallery__img{
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+/* -----------------------------------Section Blog--------- */
+.section-blog{
+    background-color: var(--light-grey-1);
+}
+
+.section-blog .blog__content-group{
+    border-radius: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+    height: 100%;
+    margin: 0 2rem;
+}
+
+
+.section-blog .blog__content-group .blog__image-box{
+    height: 19rem;
+    overflow: hidden;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.blog__content-group{ padding-bottom: 2rem; }
+.section-blog .blog__content-group .blog__title{
+    font-size: 1.8rem;
+    color: #7e7d7d;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.blog__content{
+    font-size: 1.6rem;
+    color: #aaa;
+    font-weight: 300;
+    padding: 0 1rem;
+    height: 10rem;
+    overflow: hidden;
+}
+
+
+
+/* -----------------------------------Footer--------- */
+.footer {
+    padding: 6rem 0;
+    background-color: #1f2025;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-nav-list,
+.footer-social-links{
+    display: flex;
+}
+.footer-nav-list li,
+.footer-social-links li {
+    margin-right: 1.8rem;
+
+}
+
+
+.footer-nav-list li a:link,
+.footer-nav-list li a:visited,
+.footer-social-links li a:link,
+.footer-social-links li a:visited{
+    color: #888;
+    font-size: 1.6rem;
+    transition: color .2s;
+}
+
+.footer-nav-list li a:hover,
+.footer-nav-list li a:active,
+.footer-social-links li a:hover,
+.footer-social-links li a:active{
+    color: #ddd;
+}
+.footer-copyright{
+    width: 70%;
+    margin: auto;
+    color: #888;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+
+/* Viewport less than or equal to 900px */
+@media screen and (max-width: 56.25em){
+    html{ font-size: 56.25%; }/* THIS REPRESENT 9PX 9/16*100=9*/
+
+    .site-title{ height: 100vh; }
+
+    .nav .nav__menu{ flex-direction: column; }
+  
+    .nav .nav__menu .nav__menu-item{ flex-direction: column; }
+
+    .nav .toggle-collapse{ display: initial; }
+
+    .site-title .site-title__text-box{ width: 100%; }
+
+    .site-title--main { font-size: 4rem;}
+
+
+    .container,
+    .gallery{ justify-content: space-around; }
+
+    .row .container .col-1-of-2,    
+    .row .container .col-1-of-4,
+    .row .container .col-1-of-3 { 
+        flex: 0 0 44%;
+        margin-bottom: 2rem;
+    }
+
+   .section-blog .blog__content-group .blog__image-box{ height: 20rem; }
+    
+}
+
+
+
+/* Viewport less than or equal to 768px */
+@media screen and (max-width:  48em){
+
+    .container,
+    .gallery{ 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row .container .col-1-of-2,    
+    .row .container .col-1-of-4,
+    .row .container .col-1-of-3 { 
+        width: 70%;
+    }
+
+    .event,
+    .team-member-card,
+    .section-blog .blog__content-group{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .footer-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav .footer-social-links { margin-top: 2.5rem;}
+}
+
+
+/* Viewport less than or equal to 600px */
+@media screen and (max-width: 37.5em){
+
+    .row .container .col-1-of-2,    
+    .row .container .col-1-of-4,
+    .row .container .col-1-of-3 { 
+        width: 90%;
+    }
+
+
+    .site-title--sub-1 {
+        font-size: 1.5rem;
+    }
+
+    .footer-nav-list, .footer-social-links {
+        display: block;
+    }
+
+    .footer-nav-list li, .footer-social-links li {
+        margin-bottom: 1rem;
+    }
+
+}
+
+
