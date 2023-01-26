@@ -146,6 +146,10 @@ h3 {
     margin-bottom: 1.5rem;
 }
 
+
+
+
+
 /*////////////*********************** Utility Classess ///////////////////////*/
 .u-center-text{ text-align: center;}
 .u-margin-bottom-big{ margin-bottom: 8rem; }
@@ -157,7 +161,7 @@ h3 {
     margin-left: 15%;
     font-size: 2rem;
     text-align: center;
-    line-height: 140%;
+    line-height: 145%;
 }
 .paragraph {
     font-size: 1.6rem;
@@ -440,12 +444,12 @@ h3 {
     position: relative;
     background-color: #fff;
     padding: 3rem;
-    font-family: lato, san-serif;
+    height: 100%;
 }
 .review::before{
     content: "\201C";
     position: absolute;
-     top: -10.75rem;
+    top: -10.75rem;
     left: -1rem;
     font-size: 20rem;
     color: #777;
@@ -453,7 +457,6 @@ h3 {
     z-index: 1;
 }
 .review__text{
-    font-family: lato, sans-serif;
     font-size: 1.5rem;
     font-style: italic;
     margin-bottom: 2rem;
@@ -612,8 +615,6 @@ h3 {
 @media screen and (max-width: 56.25em){
     html{ font-size: 56.25%; }/* THIS REPRESENT 9PX 9/16*100=9*/
 
-    .site-title{ height: 100vh; }
-
     .nav .nav__menu{ flex-direction: column; }
   
     .nav .nav__menu .nav__menu-item{ flex-direction: column; }
@@ -623,6 +624,11 @@ h3 {
     .site-title .site-title__text-box{ width: 100%; }
 
     .site-title--main { font-size: 4rem;}
+
+    .main-text{
+        width: 80%;
+        margin-left: 10%;
+    }
 
 
     .container,
@@ -643,7 +649,7 @@ h3 {
 
 /* Viewport less than or equal to 768px */
 @media screen and (max-width:  48em){
-
+    html{ font-size: 50%; }/* THIS REPRESENT 8PX 8/16*100=50%*/
     .container,
     .gallery{ 
         flex-direction: column;
@@ -682,18 +688,21 @@ h3 {
     }
 
 
-    .site-title--sub-1 {
-        font-size: 1.5rem;
-    }
+    .site-title--sub-1 {font-size: 1.5rem; }
 
-    .footer-nav-list, .footer-social-links {
-        display: block;
-    }
+   
+    .footer-nav-list li, .footer-social-links li { margin-bottom: 1rem; }
 
-    .footer-nav-list li, .footer-social-links li {
-        margin-bottom: 1rem;
-    }
+}
 
+
+
+
+/* Viewport less than or equal to 480px */
+@media screen and (max-width: 30em){
+    .footer-nav-list, .footer-social-links {display: block;}
+
+    .site-title--main{ font-size: 2rem; }
 }
 
 
