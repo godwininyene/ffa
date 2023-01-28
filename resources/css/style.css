@@ -20,6 +20,9 @@ body{
 	--main-color: #0099ff;
     --light-grey-1: #f7f7f7;
     --light-grey-2:#f4f4f4;
+
+    /*Theme Gradients */
+    --blue-gradient:linear-gradient(to bottom, rgb(6, 90, 147), rgb(0, 153, 255));
 }
 
 /*////////////*********************** Global Reset  ///////////////////////*/
@@ -137,6 +140,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    overflow-x: hidden;
 }
 .col-1-of-2{ flex: 0 0 48%; }
 .col-1-of-3{ flex: 0 0 31%; }
@@ -154,6 +158,7 @@ h3 {
 .u-center-text{ text-align: center;}
 .u-margin-bottom-big{ margin-bottom: 8rem; }
 .u-margin-bottom-md{ margin-bottom: 4rem ;}
+.u-margin-bottom-sm{ margin-bottom: 2rem ;}
 .u-color-text-white{ color: #fff;}
 .flex-row{ display: flex; }
 .main-text{
@@ -351,28 +356,36 @@ h3 {
 
 /*////////////*********************** Section Lead Pastor ///////////////////////*/
 .section-lead-pastor{
-    background-color: var(--main-color);
+    background-color: var(--light-grey-2);
 }
  .lead-pastor{
     background-color: #fff;
-    width: 100%;
-    padding: 2rem 0;
-    margin: auto;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 30%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 30%);
+
+   /* box-shadow: 0 2px 6px #efefef;*/
 
 }
 
-.lead-pastor-figure{
-    text-align: center;
-    margin-top: -6rem;
-}
 
 .lead-pastor__img{
-    height: 20rem;
+    width: 20rem;
+   /* height: 20rem;
     width: 20rem;
     border-radius: 100%;
     object-fit: cover;
-    object-position: left;
+    object-position: left;*/
+}
+
+.lead-pastor__bio{ 
+    width: 80%;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 140%;
+    padding: 2rem;
+    border-left: 1px solid var(--main-color);
 }
 
 
@@ -380,22 +393,9 @@ h3 {
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: bold;
-    color: var(--light-blue);
+    margin-bottom: 1rem;
 }
 
-
-
-.lead-pastor__bio{ 
-    width: 70%;
-    margin: auto;
-    font-size: 1.8rem;
-    text-align: center;
-    line-height: 140%;
-}
-.leader__info-box > .leader__figure-box{
-    text-align: center;
-    margin-top: -6rem;
-}
 
 .leader__figure-box .leader__img{
     height: 20rem;
@@ -403,15 +403,7 @@ h3 {
     display: inline-block !important;
     border-radius: 20rem;
 }
-.leader__name{
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: var(--light-blue);
-}
-.leader__info-box p{
-    font-size: 1.8rem;
-}
+
 
 
 /* -----------------------------------Section Our Team--------- */
@@ -421,6 +413,13 @@ h3 {
     text-align: center;
     height: 100%;
     margin: 0 2rem;
+}
+
+.leader__name{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+   color: var(--main-color);
 }
 
 .team-member-card p{
@@ -434,17 +433,75 @@ h3 {
     background-color: var(--light-grey-1);
 }
 
+
+/* -----------------------------------Section Sermons--------- */
+.section-sermons{
+   /* height: 50rem;*/
+}
+
+.sermon{
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+}
+.sermon video{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.sermon .sermon__description{
+    background-image: var(--blue-gradient);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    color: #fff;
+    width: 100%;
+}
+.sermon .sermon__title{
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
+.sermon .sermon__detail{ 
+    font-size: 1.6rem; 
+    line-height: 145%;
+}
+
 /* -----------------------------------Section Testimonies--------- */
 .section-testimonies{
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
 }
+
+
+.testify{
+    height: 20rem;
+    background-color: rgba(255,255,255,0.2);
+    font-size: 2rem;
+    text-align: center;
+    color:black;
+}
+
+.testify:not(:last-child){
+    margin-bottom: 3rem;
+}
+
+
+
+
+
 
 .review{
     position: relative;
     background-color: #fff;
     padding: 3rem;
     height: 100%;
+    border-radius: 1rem;
+    background-color: var(--main-color);
+    background-image: var(--blue-gradient);
+    color: white;
 }
 .review::before{
     content: "\201C";
@@ -455,6 +512,7 @@ h3 {
     color: #777;
     font-family: sans-serif;
     z-index: 1;
+    display: none;
 }
 .review__text{
     font-size: 1.5rem;
@@ -615,6 +673,8 @@ h3 {
 @media screen and (max-width: 56.25em){
     html{ font-size: 56.25%; }/* THIS REPRESENT 9PX 9/16*100=9*/
 
+    section{ padding: 5rem 0; }
+
     .nav .nav__menu{ flex-direction: column; }
   
     .nav .nav__menu .nav__menu-item{ flex-direction: column; }
@@ -639,6 +699,20 @@ h3 {
     .row .container .col-1-of-3 { 
         flex: 0 0 44%;
         margin-bottom: 2rem;
+    }
+
+     .lead-pastor{
+       flex-direction: column;
+       /* align-items: center;
+        justify-content: space-between;*/
+    }
+
+    .lead-pastor__img {
+        width: 25rem;
+    }
+
+    .lead-pastor__bio {
+        width: 90%;
     }
 
    .section-blog .blog__content-group .blog__image-box{ height: 20rem; }
@@ -683,7 +757,8 @@ h3 {
 
     .row .container .col-1-of-2,    
     .row .container .col-1-of-4,
-    .row .container .col-1-of-3 { 
+    .row .container .col-1-of-3,
+    .section-blog .blog__content-group { 
         width: 90%;
     }
 
@@ -704,5 +779,4 @@ h3 {
 
     .site-title--main{ font-size: 2rem; }
 }
-
 
