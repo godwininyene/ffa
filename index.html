@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,34 +21,45 @@
 	<link rel="icon" type="image/ico" href="./img/logo.png">
 </head>
 <body>
+ 
 	<!------------------------ Navigation --------------------------->
 	<nav class="nav">
-		<div class="nav__menu flex-row">
-
-			<div class="nav__brand flex-row">
-				<img src="./resources/img/ffa-logo.png" class="nav__logo">
-				<span>Faith and Fire Assembly</span>
-			</div>
-			<div class="toggle-collapse">
-				<div class="toggle-icons">
-					<i class="fa fa-bars"></i>
-				</div>
-			</div>
-
-
-			<ul class="nav__menu-item flex-row">
-				<li><a class="header__nav-link active" href="index.html">Home</a></li>
-                <li><a class="header__nav-link" href="our-services.html">About</a></li>
-                <li><a class="header__nav-link" href="contact-us.html">Sermons</a></li>
-
-               <!--  <li><a class="active header__nav-link" href="gallery.html">Give</a></li>
-				<li><a class="header__nav-link" href="contact-us.html">Blog</a></li> -->
-				<li><a class="header__nav-link" href="contact-us.html">Gallery</a></li>
-				<li><a class="header__nav-link" href="contact-us.html">Testimonies</a></li>
-				<li><a class="header__nav-link" href="contact-us.html">Contact</a></li>
-			</ul>
+	<div class="nav__menu flex-row">
+		<div class="nav__brand flex-row">
+			<img src="./resources/img/ffa-logo.png" class="nav__logo">
+			<span>Faith and Fire Assembly</span>
 		</div>
-	</nav>
+		<div class="toggle-collapse">
+			<div class="toggle-icons">
+				<i class="fa fa-bars"></i>
+			</div>
+		</div>
+
+		<ul class="nav__menu-item flex-row">
+			<li>
+				<a class="header__nav-link active" href="index.php">Home</a>
+			</li>
+            <li>
+            	<a class="header__nav-link "href="about-us.php">		About
+            	</a>
+            </li>
+            <li>
+            	<a class="header__nav-link "href="sermons.php">	Sermons
+            	</a>
+            </li>
+			<li>
+				<a class="header__nav-link " href="blogs.php">		Blog
+				</a>
+			</li>
+
+			<li>
+				<a class="header__nav-link "href="gallery.php">		Gallery
+				</a>
+			</li>
+			<li><a class="header__nav-link" href="#">Contact</a></li>
+		</ul>
+	</div>
+</nav> 
 	<!----x-------------------- Navigation -----------------x---------->
 
 	<!-------------------Site Title----------------------------------->
@@ -61,15 +73,15 @@
 			</div>
 		<div class="site-title__text-box">
 			<span class="site-title--main">A safe place for you to experience the goodness of God</span>
-			<span class="site-title--sub-1"><marquee direction="right">Chapel of Boundless Dominion</marquee></span>
+			<span class="site-title--sub-1">Chapel of Boundless Dominion</span>
 			<span class="site-title--sub-2">Worship | Praise | Prophecy | Prayers | Teachings</span>
 		</div>
-	</div>
+	</div> 
 	<!--------x-----------Site Title-------------x--------------------->
 
 	<main>
 		<!-----------------Section About Us------------------->
-		<section class="section-about">
+		<section class="section-about" id="section-about">
 
 			<div class="row">
 				<h2> Welcome to Faith and Fire Assembly</h2>
@@ -100,7 +112,7 @@
 							needs in order to improve learning.
 						</p>
 
-						<a href="#" class="btn btn-half">Read More</a>
+						<a href="about-us.php" class="btn btn-half">Read More</a>
 					</div>
 
 					<div class="col-1-of-2">
@@ -111,7 +123,7 @@
 				</div>
 			</div>
 			
-		</section>
+		</section> 
 		<!------x-----------Section About Us-x---------------->
 
 		<!------------------ Section Church Activities -------->
@@ -176,8 +188,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<!---------x--------- Section Church Activities ----x---->
+		</section>		<!---------x--------- Section Church Activities ----x---->
 
 		<!-------------------Section Leadership--------------->
 		<section class="section-lead-pastor">
@@ -192,7 +203,6 @@
 				<div class="lead-pastor" data-aos="zoom-in-up" data-aos-delay="1000">
 					<figure class="lead-pastor-figure">
 						<img src="resources/img/pastor.jpg" class="lead-pastor__img">
-						<!-- <figcaption class="lead-pastor__name">Pst. Victor Bello</figcaption> -->
 					</figure>
 					<div class="lead-pastor__bio">
 						<figcaption class="lead-pastor__name">About Pst. Victor Bello</figcaption>
@@ -217,8 +227,7 @@
 				</div>
 			</div>
 			
-		</section>
-		<!--------x-----------Section Leadership-------x-------->
+		</section>		<!--------x-----------Section Leadership-------x-------->
 
 		<!------------------------ Section  Our Team--------------------------->
 		<section class="section-our-team" id="section-team">
@@ -261,8 +270,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<!---------x--------------- Section  Our Team------------x--------------->
+		</section>		<!---------x--------------- Section  Our Team------------x--------------->
 
 		<!------------------------ Section  Our Beliefs--------------------------->
 		<section class="section-our-beliefs">
@@ -307,12 +315,10 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-------x----------------- Section  Our Beliefs----------------x----------->
-
+		</section>		<!-------x----------------- Section  Our Beliefs----------------x----------->
 
 		<!------------------------ Section  Sermons---------------------------------->
-		<section class="section-sermons">
+			<section class="section-sermons">
 			<div class="row">
 				<h2>Listen to our inspiring messages</h2>
 				<p class="main-text u-margin-bottom-big">
@@ -382,70 +388,67 @@
 					
 				</div>
 				<div class="btn-group">
-						<a href="#" class="btn btn-half">Checkout more sermons</a>
+						<a href="sermons.php" class="btn btn-half">Checkout more sermons</a>
 				</div>
 			</div>
-		</section>
-		<!----x-------------------- Section  Sermons------------------x--------->
+		</section>		<!----x-------------------- Section  Sermons------------------x--------->
 
 
 		<!------------------------ Section Testimonies--------------------------->
 		<section class="section-testimonies" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(resources/img/testifer.jpeg);">
-			<div class="row">
-				<h2 class="u-color-text-white">Hear what God is doing at Faith and Fire Assembly</h2>
-				<p class="main-text u-color-text-white u-margin-bottom-big">
-					Jesus is never tired of doing miracle everyday in Faith and Fire Assembly and our people are grateful for it.
-				</p>
+	<div class="row">
+		<h2 class="u-color-text-white">Hear what God is doing at Faith and Fire Assembly</h2>
+		<p class="main-text u-color-text-white u-margin-bottom-big">
+			Jesus is never tired of doing miracle everyday in Faith and Fire Assembly and our people are grateful for it.
+		</p>
+	</div>
+
+
+	<div class="row">
+		<div class="owl-carousel owl-theme testimonies-slides">
+
+			<div class="review" data-aos="fade-left" data-aos-delay="200">
+				<blockquote class="review__text">
+					Ever since I started fellowshipping in Faith and Fire Assembly, my life has turn around for good.
+					may God continue to enrich our papa.
+				</blockquote>
+
+				<figure class="review__figure">
+					<img src="resources/img/director-1.jpg" class="review__img">
+					<p class="review__name">Mathew Simon</p>
+				</figure>
 			</div>
 
+			<div class="review" data-aos="fade-left" data-aos-delay="200">
+				<blockquote class="review__text">
+					Ever since I started fellowshipping in Faith and Fire Assembly, my life has turn around for good.
+					may God continue to enrich our papa.
+				</blockquote>
 
-			<div class="row">
-				<div class="container u-margin-bottom-big">
-
-					<div class="col-1-of-2" data-aos="fade-left" data-aos-delay="200">
-						<div class="review">
-							<blockquote class="review__text">
-								Ever since I started fellowshipping in Faith and Fire Assembly, my life has turn around for good.
-								may God continue to enrich our papa.
-							</blockquote>
-
-							<figure class="review__figure">
-								<img src="resources/img/director-1.jpg" class="review__img">
-								<p class="review__name">Mathew Simon</p>
-							</figure>
-						</div>
-					</div>
-
-
-					<div class="col-1-of-2" data-aos="fade-right" data-aos-delay="200">
-						<div class="review">
-							<blockquote class="review__text">
-								Ever since I started fellowshipping in Faith and Fire Assembly, my life has turn around for good.
-								may God continue to enrich our papa.
-								Ever since I started fellowshipping in Faith and Fire Assembly, my life has turn around for good.
-								may God continue to enrich our papa.
-
-							</blockquote>
-
-							<figure class="review__figure">
-								<img src="resources/img/director-1.jpg" class="review__img">
-								<p class="review__name">Mathew Simon</p>
-							</figure>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="btn-group">
-					<a href="#" class="btn btn-half">Read ALL</a>
-				</div>
+				<figure class="review__figure">
+					<img src="resources/img/director-1.jpg" class="review__img">
+					<p class="review__name">Mathew Simon</p>
+				</figure>
 			</div>
-		</section>
-		<!------------------------ Section Testimonies--------------------------->
+			<div class="review" data-aos="fade-left" data-aos-delay="200">
+				<blockquote class="review__text">
+					Ever since I started fellowshipping in Faith and Fire Assembly, my life has turn around for good.
+					may God continue to enrich our papa.
+				</blockquote>
+
+				<figure class="review__figure">
+					<img src="resources/img/director-1.jpg" class="review__img">
+					<p class="review__name">Mathew Simon</p>
+				</figure>
+			</div>
+
+		</div>
+	</div>
+</section>		<!------------------------ Section Testimonies--------------------------->
 
 
 		<!------------------------ Section Event--------------------------->
-		<section class="section-event">
+			<section class="section-event">
 			
 			<div class="row">
 				<h2>Our upcoming event</h2>
@@ -512,12 +515,11 @@
 				</div>
 
 			</div>
-		</section>
-		<!------x------------------ Section Event------------x--------------->
+		</section>		<!------x------------------ Section Event------------x--------------->
 
 
 		<!------------------------ Section Church Gallery--------------------------->
-		<section class="section-gallery">
+			<section class="section-gallery">
 			<div class="row">
 				<h2>Explore Faith and Fire Assembly Gallery</h2>
 				<p class="main-text u-margin-bottom-big">
@@ -560,11 +562,10 @@
 					</div>
 				</div>
 				<div class="btn-group">
-					<a href="#" class="btn btn-half">VIEW ALL</a>
+					<a href="gallery.php" class="btn btn-half">VIEW ALL</a>
 				</div>
 			</div>
-		</section>
-		<!---------x--------------- Section Church Gallery--------------x------------->
+		</section>		<!---------x--------------- Section Church Gallery--------------x------------->
 
 
 		<!------------------------ Section Blog--------------------------->
@@ -636,11 +637,10 @@
 					<span class="owl-nav-next"><i class="fa fa-long-arrow-right"></i></span>
 				</div>
 			</div>
-		</section>
-		<!------x------------------ Section Blog-------------x-------------->
+		</section>		<!------x------------------ Section Blog-------------x-------------->
 
 		<!------------------------ Footer-------------------------->
-		<footer class="footer">
+			<footer class="footer">
 			<div class="row u-margin-bottom-big">
 				<div class="footer-nav">
 					<ul class="footer-nav-list">
@@ -657,10 +657,7 @@
 							<a href="#section-uniqueness">Blog</a>
 						</li>
 						<li class="nav-link">
-							<a href="#section-leadership">Media</a>
-						</li>
-						<li class="nav-link">
-							<a href="#section-team">Testimonies</a>
+							<a href="#section-uniqueness">Sermons</a>
 						</li>
 						<li class="nav-link">
 							<a href="#section-contact">Contact us</a>
@@ -676,18 +673,19 @@
 			</div>
 			<div class="row">
 				<p class="footer-copyright">
-				Design  and developed by Gereal Technology Fountain for Champions International Assemblies.
-				copy &copy; 2022, No part of this project should be replicated without prior Author Permission.
+				Design  and developed by Gereal Technology for Faith and Fire Assembly.
+				copy &copy; 2023, No part of this project should be replicated without prior Author Permission.
 			</p>
 			</div>
-		</footer>
-		<!--------x---------------- Footer--------------x------------>
+		</footer>		<!--------x---------------- Footer--------------x------------>
 	</main>
 </body>
 	<!---------------Jquery Library------------------>
 	<script src="vendors/js/jquery-3.6.0.min.js"></script>
 	<!----- Owl-Carousel Js---------------->
 	<script src="vendors/js/owl.carousel.min.js"></script>
+	<!----- Js Waypoint plugin---------------->
+	<script src="vendors/js/jquery.waypoints.min.js"></script>
 
 	<!----- AOS Js Library---------------->
 	<script src="vendors/js/aos.js"></script>
